@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Usuario</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <form class="bg-white p-8 rounded shadow-md w-96 space-y-4" onsubmit="return validarFormulario()">
+    <h2 class="text-2xl font-bold mb-4">Registro de Usuario</h2>
+    <input type="text" id="nombre" placeholder="Nombre" class="w-full border p-2 rounded">
+    <input type="email" id="correo" placeholder="Correo electrónico" class="w-full border p-2 rounded">
+    <input type="password" id="clave" placeholder="Contraseña" class="w-full border p-2 rounded">
+    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Registrar</button>
+  </form>
+  <script>
+    function validarFormulario() {
+      const nombre = document.getElementById("nombre").value;
+      const correo = document.getElementById("correo").value;
+      const clave = document.getElementById("clave").value;
+      if (!nombre || !correo || !clave) {
+        alert("Todos los campos son obligatorios");
+        return false;
+      }
+      alert("Formulario enviado correctamente");
+      return true;
+    }
+  </script>
+</body>
+</html>
