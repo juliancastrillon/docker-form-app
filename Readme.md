@@ -18,7 +18,7 @@ Sigue estos pasos para clonar el proyecto y levantarlo con Docker:
 Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/docker-form-app.git
+git clone https://github.com/juliancastrillon/docker-form-app.git
 ```
 
 Luego, navega al directorio del proyecto:
